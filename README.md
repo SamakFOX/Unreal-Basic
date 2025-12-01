@@ -28,7 +28,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- 마켓플레이스 : 언리얼에서 사용할 수 있는 데이터(Assets)의 스토어  
 &nbsp;&nbsp;&nbsp;&nbsp;- 라이브러리 : 설치된 언리얼 엔진과 에셋 목록이 표시됨 (버전별로 다운로드 가능)  
 
-
+![install-Engine](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Engine-5.6.jpg)  
 ◆ 설치 시 고려할 것  
 &nbsp;&nbsp;&nbsp;&nbsp;- 기본으로 코어 컴포넌트, 시작용 콘텐츠, 템플릿 & 피처 팩, 엔진 소스는 체크 그대로  
 &nbsp;&nbsp;&nbsp;&nbsp;- 최초 설치 시 개발할 플랫폼을 확인 후 체크박스 체크 or 해제 (PC용 게임을 개발한다면 전부 체크 해제해도 됨)  
