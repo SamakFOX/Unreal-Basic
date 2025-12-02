@@ -86,15 +86,21 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 키보드 ESC를 누르면 작업창으로 복귀  
 	
 &nbsp;&nbsp;&nbsp;&nbsp;▶ Content Browser : 현재 프로젝트의 모든 파일과 폴더의 탐색기 (좌측: 트리 뷰, 우측: 폴더 뷰)  
-
 ![ContentBrowser](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser.jpg)  
+![ContentBrowserAddBtn](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_addbtn.jpg)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Add : 엔진 및 로컬에서 컨텐츠 로드  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Import : 로컬스토리지에서 컨텐츠 임포트  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Save All : 작업한 모든 파일 목록이 나타나며, 저장할 오브젝트를 선택하여 저장  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Fab : 펩에서 컨텐츠 임포트  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ 폴더를 우클릭하여 폴더 색상을 변경하거나 Add to Favorites를 통해 즐겨찾기에 고정할 수 있음 (자주쓰는 폴더)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ 외부에서 가져온 에셋들도 한번 레벨에 배치했다면 Place Actors에서 검색하여 찾을 수 있음  
 
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 콘텐츠 브라우저를 통한 오브젝트 배치 (Place Actors 보다 다양한 오브젝트를 배치 가능)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 먼저 StarterContent의 오브젝트로 시작, 드래그&드랍으로 오브젝트 배치  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 없다면 Add > Add Feature or Content Pack... > Content > Starter Content > Add to Project 클릭하여 추가  
+![ContentLabel1](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_StaticMesh.jpg)
+![ContentLabel1](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_Material.jpg)
+![ContentLabel1](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_texture.jpg)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Static Mesh (3D 모델링 에셋) - 하늘색 라벨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Materials (Static Mesh의 재질, 질감을 설정하는 에셋) - 초록색 라벨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 뷰에 직접 드래그&드랍 해도 되고, 오브젝트의 Details > Materials에 넣어도 됨  
