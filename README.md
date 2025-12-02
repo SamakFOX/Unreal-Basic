@@ -80,7 +80,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 뷰포트 좌측의 Place Actors 패널에서 오브젝트를 드래그&드랍  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 이동모드에서 Alt를 누른채로 오브젝트를 이동시키면 복제가 됨  
 
-&nbsp;&nbsp;&nbsp;&nbsp;▶ 게임 플레이
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 게임 플레이  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 뷰포트 위의 재생버튼을 클릭하여 게임 플레이 (Player Start 오브젝트가 있는 곳에서 시작됨)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 뷰포트에서 특정 지점을 우클릭 후 Play From Here 클릭하여 해당 지점에서 플레이 시작  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 키보드 ESC를 누르면 작업창으로 복귀  
