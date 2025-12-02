@@ -86,10 +86,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 키보드 ESC를 누르면 작업창으로 복귀  
 	
 &nbsp;&nbsp;&nbsp;&nbsp;▶ Content Browser : 현재 프로젝트의 모든 파일과 폴더의 탐색기 (좌측: 트리 뷰, 우측: 폴더 뷰)  
+
+![ContentBrowser](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser.jpg)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Save All : 작업한 모든 파일 목록이 나타나며, 저장할 오브젝트를 선택하여 저장  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ 폴더를 우클릭하여 폴더 색상을 변경하거나 Add to Favorites를 통해 즐겨찾기에 고정할 수 있음 (자주쓰는 폴더)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ 외부에서 가져온 에셋들도 한번 레벨에 배치했다면 Place Actors에서 검색하여 찾을 수 있음  
-		
+
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 콘텐츠 브라우저를 통한 오브젝트 배치 (Place Actors 보다 다양한 오브젝트를 배치 가능)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 먼저 StarterContent의 오브젝트로 시작, 드래그&드랍으로 오브젝트 배치  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 없다면 Add > Add Feature or Content Pack... > Content > Starter Content > Add to Project 클릭하여 추가  
@@ -101,8 +103,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Texture(이미지) - 빨간색 라벨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Material을 만들 때 사용함 (Static Mesh에 바로 넣을 수 없음)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Particle (동적인 오브젝트)  
-> 드래그&드랍으로 환경에 바로 배치가 가능  
-> T 버튼이 눌려 있으면 반투명한 파티클들이 선택이 불가능 (T를 다시 눌러 해제하고 선택)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 드래그&드랍으로 환경에 바로 배치가 가능  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// T 버튼이 눌려 있으면 반투명한 파티클들이 선택이 불가능 (T를 다시 눌러 해제하고 선택)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Audio  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 드래그&드랍으로 환경에 배치 가능(배치된 곳에서 소리가 남)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// WAV 파일 포맷만 인식 가능  
