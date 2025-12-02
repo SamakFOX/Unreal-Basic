@@ -28,10 +28,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- 마켓플레이스 : 언리얼에서 사용할 수 있는 데이터(Assets)의 스토어  
 &nbsp;&nbsp;&nbsp;&nbsp;- 라이브러리 : 설치된 언리얼 엔진과 에셋 목록이 표시됨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (엔진버전 우측 [+] 버튼을 통해 여러 버전 설치 가능)  
- 
-<div float="left">
-	<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Engine-5.6.jpg" width="60%" height="60%">
-	<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Options-5.6.jpg" width="30%" height="30%">
+
+<div style="width:100%; display:flex; overflow-x:auto; gap:8px;">
+	<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Engine-5.6.jpg" style="width:59%; height:auto; display:block;">
+	<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Options-5.6.jpg" style="width:39%; height:auto; display:block;">
 </div>
 
 ◆ 설치 시 고려할 것  
