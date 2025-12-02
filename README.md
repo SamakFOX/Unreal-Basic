@@ -1,6 +1,6 @@
 # 언리얼 엔진 기초 사용법부터 레벨 제작 실습까지
 
-## ! Unreal Engine 5.6.1 버전 기준으로 작성<br>신버전에서 키 또는 기능이 변경될 시 해당 기능에는 안내문구가 추가됩니다.   
+## ! Unreal Engine 5.6.1 버전 기준으로 작성되었습니다.<br>신버전에서 키 또는 기능이 변경될 시 해당 기능에는 안내문구가 추가됩니다.   
 
 | 분류기호 안내 |
 |---|
@@ -17,7 +17,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- 프로그램 라이선스 : 한화 12억 미만의 스타트업은 무료  
 &nbsp;&nbsp;&nbsp;&nbsp;- 모델링을 하지 않고도 디자인이 가능 (퀵셀 모델링을 무료로 사용 가능)  
 	
-	
 ◆ 컴퓨터 사양  
 &nbsp;&nbsp;&nbsp;&nbsp;- 권장 : RTX 2060 이상, 16GB 이상의 램  
 &nbsp;&nbsp;&nbsp;&nbsp;- 최적 : RTX 2080, 3070, 4070 이상 급, 32GB 이상의 램, 100GB 이상의 저장용량  
@@ -25,11 +24,13 @@
 ![EpicLauncher](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_EG_Launcher.jpg)  
 ◆ 에픽게임즈 런처  
 &nbsp;&nbsp;&nbsp;&nbsp;- 샘플 : 언리얼 기반 프로젝트 파일  
-&nbsp;&nbsp;&nbsp;&nbsp;- 마켓플레이스 : 언리얼에서 사용할 수 있는 데이터(Assets)의 스토어  
-&nbsp;&nbsp;&nbsp;&nbsp;- 라이브러리 : 설치된 언리얼 엔진과 에셋 목록이 표시됨  
+&nbsp;&nbsp;&nbsp;&nbsp;- 마켓플레이스 : 언리얼에서 사용할 수 있는 데이터(Assets)의 스토어 (2025년 FAB으로 통합됩)  
+&nbsp;&nbsp;&nbsp;&nbsp;- 라이브러리 : 설치된 언리얼 엔진과 에셋 목록  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (엔진버전 우측 [+] 버튼을 통해 여러 버전 설치 가능)  
+&nbsp;&nbsp;&nbsp;&nbsp;- 트윈모션 : 사실적 디자인을 구현할 수 있는 리얼타임 3D 렌더러  
+&nbsp;&nbsp;&nbsp;&nbsp;- 리얼리티스캔 : 이미지와 라이다(LiDAR)를 통해 실제 오브젝트를 3D로 스캐닝  
 
-<div style="width:100%; display:flex; overflow-x:auto; gap:8px;">
+<div style="width:100%;">
 	<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Engine-5.6.jpg" style="width:59%; height:auto; display:block;">
 	<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Options-5.6.jpg" style="width:39%; height:auto; display:block;">
 </div>
@@ -40,7 +41,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- 가장 최신 버전 한개만 설치되어 있으면 됨  
 &nbsp;&nbsp;&nbsp;&nbsp;- 고퀄리티 텍스쳐를 사용하므로 한 개의 프로젝트 당 100GB 정도 용량을 잡아먹음, 감안하고 경로 지정  
 	
-	
 ◆ 프로젝트 생성  
 &nbsp;&nbsp;&nbsp;&nbsp;- 첫 프로젝트는 게임으로 진행  
 &nbsp;&nbsp;&nbsp;&nbsp;- 프로젝트 옵션 : 3인칭 템플릿 선택, 개발-플루프린트, 타깃-데스크톱, 퀄리티-Maximum, 시작용콘텐츠 체크, 레이 트레이싱 체크 (RTX 20 이상만)  
@@ -50,11 +50,70 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03. Third Person(삼인칭) 선택 후 Add to Project 클릭  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04. 콘텐츠브라우저의 ThirdPerson\Maps\ThirdPersonMap 더블클릭  
 	
-	
 ◆ 프로젝트 초기 설정  
 &nbsp;&nbsp;&nbsp;&nbsp;- 레이아웃 구성 변경  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 창 > 레이아웃 불러오기 > UE4 클래식 레이아웃 (초기엔 4로 사용하다 적응이 되면 5 레이아웃으로 변경해서 사용)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 편집 > 에디터 개인 설정 > 지역&언어 > 에디터 언어 를 영어로 변경 (오류 방지, 해외 튜토리얼 습득 등)  
 &nbsp;&nbsp;&nbsp;&nbsp;- 각 패널들은 툴바 Window에서 여러 개 꺼낼 수도 있음 (ex. 컨텐츠브라우저 2개 켜기)  
+	
+◆ 기본 조작  
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 뷰포트 조작 방법  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 우클릭 + 마우스이동 : 화면 회전  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 우클릭 + W/A/S/D : 상하좌우 이동  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 우클릭 + Q/E : 수직 상승/하강  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alt + 좌클릭 : 클릭한 지점을 기준으로 화면 회전  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 마우스 휠업/다운 : 줌인/줌아웃  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ctrl + Z : 되돌리기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 오브젝트 좌클릭 : 오브젝트 선택  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Obj 선택 후 E : 오브젝트 회전 (중심축을 선택하면 3축을 동시에 조정)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Obj 선택 후 R : 크기 조정  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 포인터/이동/회전/크기 버튼 : 오브젝트 조작  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 그리드버튼 : 가상의 그리드에 오브젝트를 스내핑 (숫자: 1틱당 움직일 단위, 구체적일수록 낮은숫자)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 각도 버튼 : 1틱당 회전할 각도 단위  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 크기 버튼 : 1틱당 조절할 크기 단위  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 카메라 모양 : 뷰를 이동하는 속도 조절  
+
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 오브젝트 배치와 조작  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 뷰포트 좌측의 Place Actors 패널에서 오브젝트를 드래그&드랍  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 이동모드에서 Alt를 누른채로 오브젝트를 이동시키면 복제가 됨  
+
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 게임 플레이
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 뷰포트 위의 재생버튼을 클릭하여 게임 플레이 (Player Start 오브젝트가 있는 곳에서 시작됨)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 뷰포트에서 특정 지점을 우클릭 후 Play From Here 클릭하여 해당 지점에서 플레이 시작  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 키보드 ESC를 누르면 작업창으로 복귀  
+	
+&nbsp;&nbsp;&nbsp;&nbsp;▶ Content Browser : 현재 프로젝트의 모든 파일과 폴더의 탐색기 (좌측: 트리 뷰, 우측: 폴더 뷰)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Save All : 작업한 모든 파일 목록이 나타나며, 저장할 오브젝트를 선택하여 저장  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ 폴더를 우클릭하여 폴더 색상을 변경하거나 Add to Favorites를 통해 즐겨찾기에 고정할 수 있음 (자주쓰는 폴더)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ 외부에서 가져온 에셋들도 한번 레벨에 배치했다면 Place Actors에서 검색하여 찾을 수 있음  
 		
-		
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 콘텐츠 브라우저를 통한 오브젝트 배치 (Place Actors 보다 다양한 오브젝트를 배치 가능)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 먼저 StarterContent의 오브젝트로 시작, 드래그&드랍으로 오브젝트 배치  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 없다면 Add > Add Feature or Content Pack... > Content > Starter Content > Add to Project 클릭하여 추가  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Static Mesh (3D 모델링 에셋) - 하늘색 라벨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Materials (Static Mesh의 재질, 질감을 설정하는 에셋) - 초록색 라벨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 뷰에 직접 드래그&드랍 해도 되고, 오브젝트의 Details > Materials에 넣어도 됨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 재질 적용 시 크기가 안맞는 경우 : Static Mesh의 크기가 작거나 크기 때문 -> 재질을 프로시져로 재생성해야 함  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 더블클릭하여 블루프린트에서 상세 설정 변경 가능  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Texture(이미지) - 빨간색 라벨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Material을 만들 때 사용함 (Static Mesh에 바로 넣을 수 없음)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Particle (동적인 오브젝트)  
+> 드래그&드랍으로 환경에 바로 배치가 가능  
+> T 버튼이 눌려 있으면 반투명한 파티클들이 선택이 불가능 (T를 다시 눌러 해제하고 선택)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Audio  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 드래그&드랍으로 환경에 배치 가능(배치된 곳에서 소리가 남)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// WAV 파일 포맷만 인식 가능  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 더블클릭하여 상세 설정창에서 값 변경 가능 (Looping: 루프, Volume: 음량, Pitch: 음정 등)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Blueprints  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 특정 기능을 하도록 만들어진 사전 설정 복합체 또는 효과 등  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 코드를 사용하지 않고 게임 기능과 논리 구조를 만들 수 있음  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Maps (level) - 주황색 라벨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 여러 맵(레벨)을 만들고 이동할 수 있음  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Props (퀄리티 있는 3D 모델)  
+	
+&nbsp;&nbsp;&nbsp;&nbsp;▶ Details : 선택된 오브젝트의 세부 설정값  
+
+&nbsp;&nbsp;&nbsp;&nbsp;▶ Outliner : 배치한 모든 오브젝트를 리스트화  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Visibility를 끄면 뷰에서는 보이지 않고 게임 플레이시엔 보이게 됨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 조합키 - Ctrl 키 : 다중 선택, Shift 키 : 구간 선택  
+
