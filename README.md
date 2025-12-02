@@ -52,20 +52,23 @@
 	
 ◆ 프로젝트 초기 설정  
 &nbsp;&nbsp;&nbsp;&nbsp;- 레이아웃 구성 변경  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 창 > 레이아웃 불러오기 > UE4 클래식 레이아웃 (초기엔 4로 사용하다 적응이 되면 5 레이아웃으로 변경해서 사용)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 편집 > 에디터 개인 설정 > 지역&언어 > 에디터 언어 를 영어로 변경 (오류 방지, 해외 튜토리얼 습득 등)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 창 > 레이아웃 불러오기 > UE4 클래식 레이아웃  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(예전 레이아웃이 편해서 클래식에서 일부 변경한 UI로 사용중입니다. UE5가 편하신 분은 그냥 사용하시면 됩니다.)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 편집 > 에디터 개인 설정 > 지역&언어 > 에디터 언어를 `영어`로 변경 (오류 방지, 해외 튜토리얼 습득 유연성을 위해)  
 &nbsp;&nbsp;&nbsp;&nbsp;- 각 패널들은 툴바 Window에서 여러 개 꺼낼 수도 있음 (ex. 컨텐츠브라우저 2개 켜기)  
-	
+
 ◆ 기본 조작  
+
+![Viewport](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_Interface01.jpg)
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 뷰포트 조작 방법  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 우클릭 + 마우스이동 : 화면 회전  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 우클릭 + W/A/S/D : 상하좌우 이동  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 우클릭 + Q/E : 수직 상승/하강  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 좌/우클릭 + W/A/S/D : 상하좌우 이동  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 좌/우클릭 + Q/E : 수직 상승/하강  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alt + 좌클릭 : 클릭한 지점을 기준으로 화면 회전  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 마우스 휠업/다운 : 줌인/줌아웃  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 마우스 휠업/다운 : 줌인/줌아웃 (카메라확대)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ctrl + Z : 되돌리기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 오브젝트 좌클릭 : 오브젝트 선택  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Obj 선택 후 E : 오브젝트 회전 (중심축을 선택하면 3축을 동시에 조정)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Obj 선택 후 E : 오브젝트 회전 조정 (중심축을 선택하면 3축을 동시에 조정)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Obj 선택 후 R : 크기 조정  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 포인터/이동/회전/크기 버튼 : 오브젝트 조작  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 상단 그리드버튼 : 가상의 그리드에 오브젝트를 스내핑 (숫자: 1틱당 움직일 단위, 구체적일수록 낮은숫자)  
