@@ -40,10 +40,13 @@
 
 <table>
   <tr>
-    <td align="center">
-		<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Engine-5.6.jpg" style="width:59%; height:auto; display:block;">
-		<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Options-5.6.jpg" style="width:39%; height:auto; display:block;"><br>
-      <em>언리얼엔진 설치 및 설치옵션</em>
+    <td align="center" width="59%">
+      <img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Engine-5.6.jpg"><br>
+      <em>언리얼엔진 설치</em>
+    </td>
+    <td align="center" width="39%">
+      <img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00000_Install-Options-5.6.jpg"><br>
+      <em>설치 옵션</em>
     </td>
   </tr>
 </table>
@@ -135,9 +138,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 콘텐츠 브라우저를 통한 오브젝트 배치 (Place Actors 보다 다양한 오브젝트를 배치 가능)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 먼저 StarterContent의 오브젝트로 시작, 드래그&드랍으로 오브젝트 배치  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 없다면 Add > Add Feature or Content Pack... > Content > Starter Content > Add to Project 클릭하여 추가  
-![ContentLabel1](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_StaticMesh.jpg)
-![ContentLabel1](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_Material.jpg)
-![ContentLabel1](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_texture.jpg)  
+
+<table>
+  <tr>
+    <td align="center">
+		<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_StaticMesh.jpg" width="100">
+		<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_Material.jpg" width="100">
+		<img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_texture.jpg" width="100"><br>
+		<em>요소별 라벨 컬러</em>
+    </td>
+  </tr>
+</table>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Static Mesh (3D 모델링 에셋) - 하늘색 라벨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Materials (Static Mesh의 재질, 질감을 설정하는 에셋) - 초록색 라벨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 뷰에 직접 드래그&드랍 해도 되고, 오브젝트의 Details > Materials에 넣어도 됨  
