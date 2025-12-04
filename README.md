@@ -86,8 +86,25 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 키보드 ESC를 누르면 작업창으로 복귀  
 	
 &nbsp;&nbsp;&nbsp;&nbsp;▶ Content Browser : 현재 프로젝트의 모든 파일과 폴더의 탐색기 (좌측: 트리 뷰, 우측: 폴더 뷰)  
-![ContentBrowser](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser.jpg)  
-![ContentBrowserAddBtn](https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_addbtn.jpg)  
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser.jpg" width="600"><br>
+      <em>컨텐츠 브라우저 창</em>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/SamakFOX/Unreal-Basic/blob/main/images/00001_cbrowser_addbtn.jpg" width="600"><br>
+      <em>Add 버튼 클릭 시 드랍다운 메뉴</em>
+    </td>
+  </tr>
+</table>
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Add : 엔진 및 로컬에서 컨텐츠 로드  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Import : 로컬스토리지에서 컨텐츠 임포트  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Save All : 작업한 모든 파일 목록이 나타나며, 저장할 오브젝트를 선택하여 저장  
