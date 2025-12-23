@@ -177,3 +177,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Visibility를 끄면 뷰에서는 보이지 않고 게임 플레이시엔 보이게 됨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 조합키 - Ctrl 키 : 다중 선택, Shift 키 : 구간 선택  
 
+◆ UE5 / 3D 이해하기  
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 오브젝트의 구성
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 3D 오브젝트는 여러개의 폴리곤으로 구성되어 있음
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 이 폴리곤의 수가 많아질 수록 퀄리티는 좋아지지만 게임에 부하가 걸리며 렉이 걸릴 수 있음(UE4까지)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 각 오브젝트에 마우스를 올리면 세부정보가 표시되는데, 이 중 Triangles(폴리곤)의 갯수를 확인하면 됨
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alt + 2 단축키를 통해 와이어프레임으로 폴리곤을 확인할 수 있음
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 언리얼엔진 5부터는 나나이트 기술을 통해 폴리곤에 구애받지 않게 됨
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 나나이트 기술 : 엔진 자체적으로 오브젝트가 화면에서 멀어질 수록 폴리곤의 수를 자동으로 줄여 부하를 줄임
