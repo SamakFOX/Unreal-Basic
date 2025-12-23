@@ -184,7 +184,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 각 오브젝트에 마우스를 올리면 세부정보가 표시되는데, 이 중 Triangles(폴리곤)의 갯수를 확인하면 됨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alt + 2 단축키를 통해 와이어프레임으로 폴리곤을 확인할 수 있음  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 언리얼엔진 5부터는 나나이트 기술을 통해 폴리곤에 구애받지 않게 됨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 나나이트 기술 : 엔진 자체적으로 오브젝트가 화면에서 멀어질 수록 폴리곤의 수를 자동으로 줄여 부하를 줄임  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 나나이트 기술 : 엔진 자체적으로 오브젝트가 화면에서 멀어질수록 폴리곤의 수를 자동으로 줄여 부하를 줄임  
 
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 고퀄리티 에셋(데이터) 사용하기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 언리얼에서 퀵셀을 인수하여 고퀄리티 텍스쳐와 모델링들을 무료로 다운로드하여 사용 가능함  
