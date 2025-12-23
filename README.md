@@ -137,7 +137,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 콘텐츠 브라우저를 통한 오브젝트 배치 (Place Actors 보다 다양한 오브젝트를 배치 가능)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 먼저 StarterContent의 오브젝트로 시작, 드래그&드랍으로 오브젝트 배치  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 없다면 Add > Add Feature or Content Pack... > Content > Starter Content > Add to Project 클릭하여 추가  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`없다면 Add > Add Feature or Content Pack... > Content > Starter Content > Add to Project 클릭하여 추가`  
 
 <table>
   <tr>
@@ -152,23 +152,23 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Static Mesh (3D 모델링 에셋) - 하늘색 라벨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Materials (Static Mesh의 재질, 질감을 설정하는 에셋) - 초록색 라벨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 뷰에 직접 드래그&드랍 해도 되고, 오브젝트의 Details > Materials에 넣어도 됨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 재질 적용 시 크기가 안맞는 경우 : Static Mesh의 크기가 작거나 크기 때문 -> 재질을 프로시져로 재생성해야 함  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 더블클릭하여 블루프린트에서 상세 설정 변경 가능  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`뷰에 직접 드래그&드랍 해도 되고, 오브젝트의 Details > Materials에 넣어도 됨`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`재질 적용 시 크기가 안맞는 경우 : Static Mesh의 크기가 작거나 크기 때문 -> 재질을 프로시져로 재생성해야 함`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`더블클릭하여 블루프린트에서 상세 설정 변경 가능`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Texture(이미지) - 빨간색 라벨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Material을 만들 때 사용함 (Static Mesh에 바로 넣을 수 없음)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Material을 만들 때 사용함 (Static Mesh에 바로 넣을 수 없음)`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Particle (동적인 오브젝트)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 드래그&드랍으로 환경에 바로 배치가 가능  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// T 버튼이 눌려 있으면 반투명한 파티클들이 선택이 불가능 (T를 다시 눌러 해제하고 선택)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`드래그&드랍으로 환경에 바로 배치가 가능`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`T 버튼이 눌려 있으면 반투명한 파티클들이 선택이 불가능 (T를 다시 눌러 해제하고 선택)`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Audio  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 드래그&드랍으로 환경에 배치 가능(배치된 곳에서 소리가 남)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// WAV 파일 포맷만 인식 가능  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 더블클릭하여 상세 설정창에서 값 변경 가능 (Looping: 루프, Volume: 음량, Pitch: 음정 등)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`드래그&드랍으로 환경에 배치 가능(배치된 곳에서 소리가 남)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`WAV 파일 포맷만 인식 가능`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`더블클릭하여 상세 설정창에서 값 변경 가능 (Looping: 루프, Volume: 음량, Pitch: 음정 등)`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Blueprints  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 특정 기능을 하도록 만들어진 사전 설정 복합체 또는 효과 등  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 코드를 사용하지 않고 게임 기능과 논리 구조를 만들 수 있음  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`특정 기능을 하도록 만들어진 사전 설정 복합체 또는 효과 등`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`코드를 사용하지 않고 게임 기능과 논리 구조를 만들 수 있음`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Maps (level) - 주황색 라벨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 여러 맵(레벨)을 만들고 이동할 수 있음  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`여러 맵(레벨)을 만들고 이동할 수 있음`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Props (퀄리티 있는 3D 모델)  
 	
 &nbsp;&nbsp;&nbsp;&nbsp;▶ Details : 선택된 오브젝트의 세부 설정값  
@@ -188,7 +188,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 고퀄리티 에셋(데이터) 사용하기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 언리얼에서 퀵셀을 인수하여 고퀄리티 텍스쳐와 모델링들을 무료로 다운로드하여 사용 가능함  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 퀵셀 : 실제 자연환경을 리얼리티캡쳐를 통해 사실적이게 구현해 둔 에셋을 배포  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`퀵셀 : 실제 자연환경을 리얼리티캡쳐를 통해 사실적이게 구현해 둔 에셋을 배포`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01. 뷰포트 상단에 박스모양 위에 플러스 모양이 있는 버튼 클릭  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02. Quixel Bridge 클릭 후 에픽게임즈 계정으로 로그인  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03. 우측상단 계정아이콘 > Preferences > Library Path 설정 (고용량 에셋들이므로 보조 저장장치를 사용하는 것이 좋음 - SSD 아니여도 됨)  
@@ -200,12 +200,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;▶ 퀵셀 데이터 용량 최적화하기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 폴리곤 못지 않게 텍스쳐의 용량이 큼 : 상세정보의 Dimensions(해상도)와 Disk Size(용량) 확인  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 8K 텍스쳐와 4K 텍스쳐는 게임에서 드라마틱한 차이가 있지 않으므로 텍스쳐 품질은 4K 또는 2K로 사용해도 됨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 오브젝트를 가까이서 보여줘야 하는 프로젝트의 경우는 8K LOD 0  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`오브젝트를 가까이서 보여줘야 하는 프로젝트의 경우는 8K LOD 0`  
 &nbsp;&nbsp;&nbsp;&nbsp;★ 인게임 리소스 사용량 줄이기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01. 텍스쳐를 더블클릭하여 상세정보 창 오픈  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02. Details의 LOD Bias 값을 증가시키면 텍스쳐 해상도가 변경됨  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(8K -> LOD 1 -> 4K) - 인게임 리소스 사용량도 1/4  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(8K -> LOD 2 -> 2K) - 인게임 리소스 사용량도 1/4 * 1/4 = 1/16  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(8K -> LOD 1 -> 4K) - 인게임 리소스 사용량도 1/4`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(8K -> LOD 2 -> 2K) - 인게임 리소스 사용량도 1/4 * 1/4 = 1/16`  
 &nbsp;&nbsp;&nbsp;&nbsp;★ 저장장치 사용량 줄이기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 나나이트 품질의 오브젝트를 사용한다면 노멀맵 텍스쳐는 사실상 필요성이 적음 (LOD를 변경해보면 변화가 없는 걸 알 수 있음)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- DpR 텍스쳐는 필요 없음 (하지만 여러 사람과 협업을 한다면 유지를 고려해야 함)  
