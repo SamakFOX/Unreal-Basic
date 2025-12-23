@@ -178,10 +178,22 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 조합키 - Ctrl 키 : 다중 선택, Shift 키 : 구간 선택  
 
 ◆ UE5 / 3D 이해하기  
-&nbsp;&nbsp;&nbsp;&nbsp;▶ 오브젝트의 구성
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 오브젝트의 구성  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 3D 오브젝트는 여러개의 폴리곤으로 구성되어 있음  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 이 폴리곤의 수가 많아질 수록 퀄리티는 좋아지지만 게임에 부하가 걸리며 렉이 걸릴 수 있음(UE4까지)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 각 오브젝트에 마우스를 올리면 세부정보가 표시되는데, 이 중 Triangles(폴리곤)의 갯수를 확인하면 됨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alt + 2 단축키를 통해 와이어프레임으로 폴리곤을 확인할 수 있음  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 언리얼엔진 5부터는 나나이트 기술을 통해 폴리곤에 구애받지 않게 됨  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 나나이트 기술 : 엔진 자체적으로 오브젝트가 화면에서 멀어질 수록 폴리곤의 수를 자동으로 줄여 부하를 줄임  
+
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 고퀄리티 에셋(데이터) 사용하기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 언리얼에서 퀵셀을 인수하여 고퀄리티 텍스쳐와 모델링들을 무료로 다운로드하여 사용 가능함  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 퀵셀 : 실제 자연환경을 리얼리티캡쳐를 통해 사실적이게 구현해 둔 에셋을 배포  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01. 뷰포트 상단에 박스모양 위에 플러스 모양이 있는 버튼 클릭  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02. Quixel Bridge 클릭 후 에픽게임즈 계정으로 로그인  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03. 우측상단 계정아이콘 > Preferences > Library Path 설정 (고용량 에셋들이므로 보조 저장장치를 사용하는 것이 좋음 - SSD 아니여도 됨)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04. 원하는 에셋 선택 후 품질을 선택하여 다운로드 클릭 (Ctrl 키로 여러 에셋 선택 가능)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05. 다운로드가 완료되면 Add 버튼을 클릭  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06. UE로 돌아가 콘텐츠 브라우저의 Megascans 폴더 확인  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07. Static Mesh에 텍스쳐와 재질이 적용되어 있으므로 바로 사용 가능  
+
