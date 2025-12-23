@@ -197,3 +197,39 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06. UE로 돌아가 콘텐츠 브라우저의 Megascans 폴더 확인  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07. Static Mesh에 텍스쳐와 재질이 적용되어 있으므로 바로 사용 가능  
 
+&nbsp;&nbsp;&nbsp;&nbsp;▶ 퀵셀 데이터 용량 최적화하기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 폴리곤 못지 않게 텍스쳐의 용량이 큼 : 상세정보의 Dimensions(해상도)와 Disk Size(용량) 확인  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 8K 텍스쳐와 4K 텍스쳐는 게임에서 드라마틱한 차이가 있지 않으므로 텍스쳐 품질은 4K 또는 2K로 사용해도 됨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 오브젝트를 가까이서 보여줘야 하는 프로젝트의 경우는 8K LOD 0  
+&nbsp;&nbsp;&nbsp;&nbsp;★ 인게임 리소스 사용량 줄이기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01. 텍스쳐를 더블클릭하여 상세정보 창 오픈  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02. Details의 LOD Bias 값을 증가시키면 텍스쳐 해상도가 변경됨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(8K -> LOD 1 -> 4K) - 인게임 리소스 사용량도 1/4  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(8K -> LOD 2 -> 2K) - 인게임 리소스 사용량도 1/4 * 1/4 = 1/16  
+&nbsp;&nbsp;&nbsp;&nbsp;★ 저장장치 사용량 줄이기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 나나이트 품질의 오브젝트를 사용한다면 노멀맵 텍스쳐는 사실상 필요성이 적음 (LOD를 변경해보면 변화가 없는 걸 알 수 있음)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- DpR 텍스쳐는 필요 없음 (하지만 여러 사람과 협업을 한다면 유지를 고려해야 함)  
+&nbsp;&nbsp;&nbsp;&nbsp;☆ 노멀맵 파일은 낮은 품질로 다운로드하고 필요하다면 LOD를 더 낮춰줌  
+&nbsp;&nbsp;&nbsp;&nbsp;☆ DpR 파일은 제거 (Delete 키 또는 우클릭>Delete 클릭 후 Force Delete)  
+			
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 퀵셀에서 데이터별로 품질 조정하기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 퀄리티를 Nanaite로 설정하고 다운로드  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Add를 눌러 콘텐츠 브라우저에 추가  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 퀄리티를 High(4K)로 설정하고 다운로드 또는 Midium(2K)으로 설정하고 다운로드  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Add를 눌러 콘텐츠 브라우저에 추가  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 콘텐츠 브라우저에서 해당 모델의 Static Mesh를 둘 다 배치  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 텍스쳐 중 8K로 설정된 파일들, 4K의 DpR 텍스쳐, 4K Static Mesh를 선택하고  Delete > Force Delete  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 8k 검색, DpR 검색, Static Mesh 필터링 후 lod0 검색 - 순서대로 삭제  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// UE5가 강제종료될 경우 배치된 오브젝트를 삭제하고 리소스를 다시 제거  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 나나이트 모델의 텍스쳐가 미싱 상태로 바뀜  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 콘텐츠 브라우저에서 Static Mesh를 더블클릭하여 새 창 오픈 (월드에 배치된 오브젝트에 넣으면 다음에 사용 시 텍스쳐를 또 넣어줘야됨)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Details의 Material Slots에 4K Material을 드래그&드랍  
+				
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 여러 텍스쳐를 작업할 때  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Content Browser 좌측의 트리 뷰에서 여러 폴더를 다중선택or구간선택  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 선택된 폴더의 모든 리소스가 우측에 표시됨  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//  썸네일 로딩이 되지 않는 경우 한 번 배치하면 전부 로딩됨 (하늘색 라벨 에셋만 전부 배치하면 됨)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ctrl + 휠다운 : 우측 뷰 목록 작게보기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 검색바 이용 8k 검색 후 전체 삭제, lod 검색 후 전체 삭제(High 모델), DpR 검색 후 전체 삭제  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 검색바 좌측의 필터버튼을 이용해서 필터링할수도 있음  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 나나이트 모델 세부정보를 하나씩 켜서 Material을 재적용  
